@@ -51,7 +51,7 @@ function Modal({
       >
         <input
           className="Modal__content__search"
-          placeholder="Search avaliable columns..."
+          placeholder="Search available columns..."
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
@@ -63,7 +63,7 @@ function Modal({
                 ref={provided.innerRef}
                 {...provided.droppableProps}
               >
-                <div>Avaliable Columns</div>
+                <div>Available Columns</div>
                 {columns
                   .filter((column) => {
                     if (text === "") {

@@ -1,0 +1,88 @@
+.Modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+.Modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.Modal__content {
+    padding: 40px;
+    background-color: #1f2127;
+    border-radius: 15px;
+    box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.407);
+    width: 50%;
+}
+
+
+.Modal__content__search {
+    background-color: black;
+    width: 35%;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.Modal__content__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.Modal__content__columns__container {
+    width: 35%;
+    background-color: #191b1f;
+    min-height: 400px;
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.Modal__content__columns__container__cell {
+    display: flex;
+    width: 80%;
+    background-color: #1f2127;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.Button {
+    background-color: #bb5bf4;
+    color: white;
+    width: 15%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.Button__container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+@media screen and (max-width: 750px) {
+    .Modal__content__columns__container {
+        min-height: 150px;
+    }
+  }

@@ -13,7 +13,7 @@ After selecting the required columns, you need to click on the apply button on t
 ![image](https://user-images.githubusercontent.com/109813340/219693435-afcdb71c-e78d-4011-b2dd-ea8590dcc0be.png)
 ![image](https://user-images.githubusercontent.com/109813340/219693524-fe933d86-aca2-4d5c-b225-dac67ae61afa.png)
 
-There are 2 ways to install my app. The first, with the help of the commands: git init and git clone [https://github.com/eristor/A-beautiful-thing.git] and the name of the folder at the end. The second way is to run the project using vsCode.
+Any installation requires yarn and node.js to be installed. Installation with the help of the commands: git init and git clone [https://github.com/eristor/A-beautiful-thing.git] and the name of the folder at the end. You also need to have VsCode or any other code editor that supports js.
 
-!IMPORTANT For the project to work, you need to install the following components and packages: yarn add @redux-toolkit, yarn add react-beautiful-dnd, yarn add react-data-table-component.
+!IMPORTANT For the project to work, you need to install the following components and packages: yarn add @redux-toolkit, yarn add react-beautiful-dnd, yarn add react-data-table-component, if you have npm you can replace yarn add to npm i.
 

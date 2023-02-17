@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 import DataTable from "react-data-table-component";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers } from "../redux/slice/users";
@@ -7,16 +7,13 @@ import "./Table.css";
 
 function Table({ order }) {
   const state = useSelector((state) => state);
-  const [data, setData] = useState(state.user.data);
-  const [loading, setLoading] = useState(state.user.isLoading);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchUsers());
-    setData(state.user.data);
-    setLoading()
-  }, [setData]);
+    
+  }, [dispatch]);
 
   
 
@@ -58,7 +55,7 @@ function Table({ order }) {
 
   return (
     <>
-      <DataTable columns={columns} data={data} progressPending={loading} />
+      <DataTable columns={columns} data={state.user.data} progressPending={state.user.isLoading} />
     </>
   );
 }

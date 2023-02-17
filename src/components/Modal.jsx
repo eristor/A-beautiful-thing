@@ -16,7 +16,7 @@ function Modal({
   const swapColumns = () => {
     columns.map((column) => {
       if (column.state === true) {
-        setActiveColumns((info) => [...info, column]);
+        setActiveColumns((data) => [...data, column]);
       }
     });
   };
@@ -121,7 +121,7 @@ function Modal({
                           columnDelete(column.label);
                         }}
                       >
-                        X
+                        <span className="close">X</span>
                       </div>
                     </div>
                   ) : (

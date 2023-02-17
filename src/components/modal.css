@@ -81,6 +81,14 @@
     justify-content: flex-end;
     margin-top: 15px;
 }
+
+.close {
+    cursor: pointer;
+    transition: .3s;
+}
+.close:hover {
+    color: #8155e3;
+}
 @media screen and (max-width: 750px) {
     .Modal__content__columns__container {
         min-height: 150px;

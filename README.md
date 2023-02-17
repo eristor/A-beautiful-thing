@@ -1,71 +1,19 @@
-# Getting Started with Create React App
+My project is called Beautiful Thing.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created for viewing, sorting and selecting the right information with a convenient interface and cool features such as drag and drop.
 
-## Available Scripts
+By default, a table with information about 10 users is displayed on the screen. The information was taken from the JsonPlaceholder website.
+To replace the information, you need to change the reference to the resource in the users.js file, as well as change the configuration of the columns variable in the app.js file, and also add the relevant information to the columns variable in the Table.jsx file, in the same place you need to change the information that will be appear in the table.
+By clicking on the name of any column, it can be sorted by descending or ascending, which will make the search for the necessary information more convenient.
 
-In the project directory, you can run:
+There is also a button on the main screen that opens a modal window when clicked. In this window, you can choose which columns will be displayed and which will not. On the left are the available, unselected columns, which you need to move the mouse to the right column with dnd. If you want to delete one of the columns on the right, you need to click on the cross, which is located to the right of the name of each column.
+To search for available columns, you need to use the search above the left column.
+After selecting the required columns, you need to click on the apply button on the right side at the bottom. After that, you will be transferred to the main page, where updated information will be waiting for you
 
-### `yarn start`
+![image](https://user-images.githubusercontent.com/109813340/219693435-afcdb71c-e78d-4011-b2dd-ea8590dcc0be.png)
+![image](https://user-images.githubusercontent.com/109813340/219693524-fe933d86-aca2-4d5c-b225-dac67ae61afa.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+There are 2 ways to install my app. The first, with the help of the commands: git init and git clone [https://github.com/eristor/A-beautiful-thing.git] and the name of the folder at the end. The second way is to run the project using vsCode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+!IMPORTANT For the project to work, you need to install the following components and packages: yarn add @redux-toolkit, yarn add react-beautiful-dnd, yarn add react-data-table-component.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# A-beautiful-thing
